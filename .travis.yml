@@ -5,6 +5,7 @@ os:
 language: node_js
 node_js:
   - 7
+  - 10
 env: KACPER=Matrixtest
 script:
   - echo $KACPER

@@ -1,8 +1,12 @@
-os: 
-  - linux
-  - windows
+os: linux
+dist: bionic
 language: node_js
 node_js:
   - 7
 script:
+  - echo $KACPER
   - npm start
+jobs:
+  include: 
+    - env: KACPER=ssem
+    - env: KACPER=ZycieCiZbrzydlo

@@ -2,13 +2,16 @@ os: linux
 dist: 
   - bionic
   - xenial
+  - trusty
 language: node_js
 node_js:
   - 7
+  - 10
+env: KACPER=Matrixtest
 script:
   - echo $KACPER
   - npm start
-jobs:
-  include: 
-    - env: KACPER=ssem
-    - env: KACPER=ZycieCiZbrzydlo
+#jobs:
+ # include: 
+ #   - env: KACPER=ssem
+ #   - env: KACPER=ZycieCiZbrzydlo

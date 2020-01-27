@@ -1,12 +1,10 @@
-os: linux
-dist: 
-  - bionic
-  - xenial
-  - trusty
+os: 
+ - linux
+ - windows
+ - macos
 language: node_js
 node_js:
   - 7
-  - 10
 env: KACPER=Matrixtest
 script:
   - echo $KACPER
